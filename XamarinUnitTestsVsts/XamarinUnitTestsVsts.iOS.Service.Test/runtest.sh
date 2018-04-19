@@ -3,7 +3,7 @@ echo 'Output path = ' $1
 TEST_RESULT=$1/test_results.xml
 echo 'Delete test result'
 rm -rf $TEST_RESULT
-mono --debug XamarinUnitTestsVsts/XamarinUnitTestsVsts.iOS.Service.Test/Touch.Server.exe \
+mono --debug $Build.SourcesDirectory/XamarinUnitTestsVsts/XamarinUnitTestsVsts.iOS.Service.Test/Touch.Server.exe \
 --launchsim  \
 -autoexit \
 -skipheader \
