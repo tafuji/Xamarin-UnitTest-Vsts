@@ -6,7 +6,7 @@ ROOT_DIRECTORY=$2
 echo 'Delete test result'
 rm -rf $TEST_RESULT
 mono --debug $ROOT_DIRECTORY/XamarinUnitTestsVsts/XamarinUnitTestsVsts.iOS.Service.Test/Touch.Server.exe \
---launchsim  \
+--launchsim  ./bin/iPhoneSimulator/Debug/XamarinUnitTestsVsts.iOS.Service.Test.app \
 -autoexit \
 -skipheader \
 -logfile=$TEST_RESULT \
