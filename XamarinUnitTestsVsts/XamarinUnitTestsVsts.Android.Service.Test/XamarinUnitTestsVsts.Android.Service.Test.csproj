@@ -70,6 +70,12 @@
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XamarinUnitTestsVsts.Android.Service\XamarinUnitTestsVsts.Android.Service.csproj">
+      <Project>{f08dbc62-8e59-45c4-b76b-769462fd7039}</Project>
+      <Name>XamarinUnitTestsVsts.Android.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.

@@ -60,6 +60,7 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CalculatorTest.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Info.plist" />
@@ -79,6 +80,14 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XamarinUnitTestsVsts.iOS.Service\XamarinUnitTestsVsts.iOS.Service.csproj">
+      <Project>{fb595183-9074-4817-961f-a7d11c083843}</Project>
+      <Name>XamarinUnitTestsVsts.iOS.Service</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
