@@ -11,4 +11,4 @@ mono --debug $ROOT_DIRECTORY/XamarinUnitTestsVsts/XamarinUnitTestsVsts.iOS.Servi
 -skipheader \
 -logfile=$TEST_RESULT \
 --verbose \
---device=":v2:runtime=com.apple.CoreSimulator.SimRuntime.iOS-10-3,devicetype=com.apple.CoreSimulator.SimDeviceType.iPhone-8"
+# --device=":v2:runtime=com.apple.CoreSimulator.SimRuntime.iOS-10-3,devicetype=com.apple.CoreSimulator.SimDeviceType.iPhone-8"
