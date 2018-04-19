@@ -1,10 +1,11 @@
 #!/bin/sh
 echo 'Output path = ' $1
-TEST_RESULT=$1/test_results.xml
 ROOT_DIRECTORY=$1
+TEST_PROJECT_DIRECTORY=$1/$2
+TEST_RESULT=$TEST_PROJECT_DIRECTORY/test_results.xml
 echo 'Delete test result'
 rm -rf $TEST_RESULT
-mono --debug $ROOT_DIRECTORY/XamarinUnitTestsVsts/XamarinUnitTestsVsts.iOS.Service.Test/Touch.Server.exe \
+mono --debug $TEST_PROJECT_DIRECTORY/Touch.Server.exe \
 --launchsim  ./bin/iPhoneSimulator/Debug/XamarinUnitTestsVsts.iOS.Service.Test.app \
 -autoexit \
 -skipheader \
