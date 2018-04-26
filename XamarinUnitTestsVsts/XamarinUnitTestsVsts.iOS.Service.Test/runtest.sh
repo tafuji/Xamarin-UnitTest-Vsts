@@ -7,7 +7,7 @@ echo 'Delete test result'
 rm -rf $TEST_RESULT
 mono --debug $TEST_PROJECT_DIRECTORY/Touch.Server.exe \
 --launchsim  ./bin/iPhoneSimulator/Debug/XamarinUnitTestsVsts.iOS.Service.Test.app \
--autoexit true\
+-autoexit \
 -skipheader \
 -logfile=$TEST_RESULT \
 --verbose \
