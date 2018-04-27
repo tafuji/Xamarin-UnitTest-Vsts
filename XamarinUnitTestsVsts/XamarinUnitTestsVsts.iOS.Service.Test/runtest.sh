@@ -1,6 +1,5 @@
 #!/bin/sh
 echo 'Output path = ' $1
-TEST_PROJECT_DIRECTORY=$1
 TEST_RESULT=$1/test_results.xml
 echo 'Delete test result'
 rm -rf $TEST_RESULT
