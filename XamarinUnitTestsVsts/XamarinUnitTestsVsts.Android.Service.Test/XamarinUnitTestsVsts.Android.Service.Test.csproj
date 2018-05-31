@@ -61,6 +61,8 @@
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <None Include="runtest.bat" />
+    <None Include="Touch.Server.Android.exe.config" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
@@ -76,6 +78,10 @@
       <Project>{f08dbc62-8e59-45c4-b76b-769462fd7039}</Project>
       <Name>XamarinUnitTestsVsts.Android.Service</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CommandLine.dll" />
+    <Content Include="Touch.Server.Android.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
