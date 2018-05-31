@@ -52,6 +52,7 @@
     <Reference Include="Xamarin.Android.NUnitLite" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculatorTest.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="TestSample.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
